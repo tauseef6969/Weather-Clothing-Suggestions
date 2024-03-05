@@ -11,7 +11,6 @@ Welcome to Weather Clothing Suggestions! This Flask-based web application provid
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
