@@ -33,7 +33,7 @@ def clothing_suggestions(weather):
 def index():
     if request.method == 'POST':
         city = request.form['city']
-        api_key = 'd2fb6f45682c9277496db5d30ab47b7b'  # Replace with your API key
+        api_key = 'API_KEY'  # Replace with your API key
         weather_data = get_weather(city, api_key)
         suggestions, weather_type = clothing_suggestions(weather_data)
         return render_template('index.html', city=city, suggestions=suggestions, weather_type=weather_type, 
