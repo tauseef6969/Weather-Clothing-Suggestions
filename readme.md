@@ -31,7 +31,7 @@ To install and run Weather Clothing Suggestions locally on your machine, follow 
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/tauseef6969/Weather-Clothing-Suggestions>
 2. **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
