@@ -1,0 +1,104 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.weather-suggestion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-conditions {
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-conditions p {
+    margin: 10px 0;
+}
+
+.suggestion {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.weather-info {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.weather-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* CSS for weather effects */
+@keyframes sunny {
+    0% { background-color: #89cff0; }
+    50% { background-color: #f5d942; }
+    100% { background-color: #89cff0; }
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: sunny 5s infinite alternate;
+}

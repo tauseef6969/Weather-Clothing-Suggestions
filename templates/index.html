@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Clothing Suggestions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+            <h1>Weather Clothing Suggestions</h1>
+            <form id="weather-form" method="POST" action="/">
+                <div class="input-container">
+                    <label for="city">Enter City:</label>
+                    <input type="text" id="city" name="city" class="input-field" placeholder="City Name" required>
+                </div>
+                <button type="submit" class="btn">Get Weather</button>
+            </form>
+            {% if suggestions %}
+            <div class="weather-suggestion">
+                <p class="suggestion">{{ suggestions }}</p>
+            </div>
+            <div class="weather-conditions">
+                <center><h2><i class="fas fa-map-marker-alt"></i> <span class="weather-info">Weather in {{ city }}</span></h2></center>
+                <p><i class="fas fa-thermometer-half weather-icon"></i> <span class="weather-info">Temperature:</span> {{ temperature }}&deg;C</p>
+                <p><i class="fas fa-tint weather-icon"></i> <span class="weather-info">Humidity:</span> {{ humidity }}%</p>
+                <p><i class="fas fa-wind weather-icon"></i> <span class="weather-info">Wind Speed:</span> {{ wind_speed }} m/s</p>
+                
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
